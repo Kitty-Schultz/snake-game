@@ -10,6 +10,7 @@ function Snake() {
         var d = dist(this.x, this.y, pos.x, pos.y);
         if (d < 1) {
             this.total++; 
+            frameRate(6 + this.total);
             return true; 
         } else {
             return false; 
